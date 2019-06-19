@@ -24,10 +24,10 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 ---
 1. Podział sieci.
 
-| ilość | netmaska | adres |
-|-------|----------|------ |
-| 500 urządzeń  | /23 | 255.255.254.0 |
-| 5000 urządzeń | /19 | 255.255.224.0 |
+| ilość | netmaska | adres | komentarz |
+|-------|----------|-------|-----------|
+| 500 urządzeń  | /23 | 255.255.254.0 | zmieści się 510 adresów |
+| 5000 urządzeń | /19 | 255.255.224.0 | zmieści się 8190  adresów |
 
 | 1 | 2 | 3 |
 |---|---|---|

@@ -23,6 +23,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 2.2
 ---
 1. Podział sieci.
+|:--------------|:----|:--------------|
 | 500 urządzeń  | /23 | 255.255.254.0 |
 | 5000 urządzeń | /19 | 255.255.224.0 |
 

@@ -73,7 +73,6 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
   
 4. IP Forwarding PC0.
   * używamy polecenia ``echo 1 > /proc/sys/net/ipv4/ip_forward``
-  * ustawiamy tak, aby ``net.ipv4.ip_forward=1`` było aktywne (plik ``/etc/sysctl.d/99-sysctl.conf``)
   
   
 5. Masquerade PC0.

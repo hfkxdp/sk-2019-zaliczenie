@@ -37,7 +37,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 
 2. Dodawanie adresów IP.
   * używamy polecenia ``ip addr add + 'ip' + dev + 'interfejs'``
-  * oraz polecenia ``ip link set + interfejs + down/up``
+  * oraz polecenia ``ip link set + 'interfejs' + down/up``
   
   * PC0:
   
@@ -51,7 +51,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 
    * PC1:
    
-    - ip addr add 172.22.128.2/23 dev ``enp0s3``
+    - ip addr add 172.22.128.2/23 dev enp0s3
     - ip link set enp0s3 down
     - ip link set enp0s3 up
 
@@ -62,7 +62,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
     - ip link set enp0s3 up
 
 3. Ustawianie routingu.
-  * używamy polecenia ``ip route add default via + adres``
+  * używamy polecenia ``ip route add default via + 'adres'``
   
   * PC1:
   
@@ -76,7 +76,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
   
   
 5. Masquerade PC0.
-  * używamy polecenia ``iptables -t nat -A POSTROUTING -s + adres + -o + interfejs + -j MASQUERADE`` 
+  * używamy polecenia ``iptables -t nat -A POSTROUTING -s + 'adres' + -o + 'interfejs' + -j MASQUERADE`` 
   * PC0:
   
     - iptables -t nat -A POSTROUTING -s ``172.22.128.0/23`` -o ``enp0s3`` -j MASQUERADE

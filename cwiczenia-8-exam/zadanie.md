@@ -29,8 +29,8 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 | 500 urządzeń  | /23 | 255.255.254.0 |
 | 5000 urządzeń | /19 | 255.255.224.0 |
 
-| IP startowy | 172.22.128.0    | podany adres                                                                      |
-|   ``LAN1``  | 172.22.128.0/23 | orzystając z obliczeń w kalkulatorze - kolejne adresy w /19 zaczynają się od 160
+| IP startowy | 172.22.128.0    | podany adres |                                                                      
+|   ``LAN1``  | 172.22.128.0/23 | orzystając z obliczeń w kalkulatorze - kolejne adresy w /19 zaczynają się od 160  |
 |   ``LAN2``  | 172.22.160.0/19 | Korzystając z obliczeń w kalkulatorze - kolejne adresy w /19 zaczynają się od 160 |
 
 

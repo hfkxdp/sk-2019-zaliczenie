@@ -85,3 +85,5 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 3.KONIEC
 --------
  
+![](koniec.png)
+```

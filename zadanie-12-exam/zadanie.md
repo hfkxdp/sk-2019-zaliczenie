@@ -44,4 +44,4 @@
 * Przygotuj prototyp rozwiązania z wykorzystaniem oprogramowania ``VirtualBox`` lub podobnego.
 * W specyfikacji uwzględnij wielkości sieci oraz ich adresy
 * W specyfikacji uwzględnij konfigurację tablicy routingu
-* Dokumentację graficzną stworzonej architektury przygotuj w programie ``DIA`` lub podobnym
+* Dokumentację graficzną stworzonej architektury przygotuj w programie ``DIA`` lub podobnym 

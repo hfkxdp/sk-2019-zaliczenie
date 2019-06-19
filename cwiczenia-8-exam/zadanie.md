@@ -40,6 +40,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
   * oraz polecenia ``ip link set + interfejs + down/up``
   
   * PC0:
+  
     - ip addr add ``172.22.128.1/23`` dev ``enp0s8``
     - ip link set ``enp0s8`` down
     - ip link set ``enp0s8`` up
@@ -49,11 +50,13 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
     - ip link set ``enp0s9`` up
 
    * PC1:
+   
     - ip addr add ``172.22.128.2/23`` dev ``enp0s3``
     - ip link set ``enp0s3`` down
     - ip link set ``enp0s3`` up
 
    * PC2:
+   
     - ip addr add ``172.22.160.2/19`` dev ``enp0s3``
     - ip link set ``enp0s3`` down
     - ip link set ``enp0s3`` up
@@ -62,8 +65,10 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
   * używamy polecenia ``ip route add default via + adres``
   
   * PC1:
+  
     - ip route add default via 172.22.128.1
   * PC2:
+  
     - ip route add default via 172.22.160.1
   
 4. IP Forwarding PC0.
@@ -74,6 +79,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 5. Masquerade PC0.
   * używamy polecenia ``iptables -t nat -A POSTROUTING -s + adres + -o + interfejs + -j MASQUERADE`` 
   * PC0:
+  
     - iptables -t nat -A POSTROUTING -s ``172.22.128.0/23`` -o ``enp0s3`` -j MASQUERADE
     - iptables -t nat -A POSTROUTING -s ``172.22.160.0/19`` -o ``enp0s3`` -j MASQUERADE
     

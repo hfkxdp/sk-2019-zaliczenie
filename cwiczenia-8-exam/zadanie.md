@@ -51,15 +51,15 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 
    * PC1:
    
-    - ip addr add ``172.22.128.2/23`` dev ``enp0s3``
-    - ip link set ``enp0s3`` down
-    - ip link set ``enp0s3`` up
+    - ip addr add 172.22.128.2/23 dev ``enp0s3``
+    - ip link set enp0s3 down
+    - ip link set enp0s3 up
 
    * PC2:
    
-    - ip addr add ``172.22.160.2/19`` dev ``enp0s3``
-    - ip link set ``enp0s3`` down
-    - ip link set ``enp0s3`` up
+    - ip addr add 172.22.160.2/19 dev enp0s3
+    - ip link set enp0s3 down
+    - ip link set enp0s3 up
 
 3. Ustawianie routingu.
   * używamy polecenia ``ip route add default via + adres``
